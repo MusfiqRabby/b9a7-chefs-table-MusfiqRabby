@@ -48,7 +48,7 @@ const Header = () => {
     
     {/* <div class="container mx-auto lg:px-20 pt-3 my-0 lg:my-4"> */}
     <section>
-    <div class="bg-cover bg-no-repeat bg-center mx-auto lg:w-[98%] h-full lg:h-[100vh] rounded-lg bg-[url('public/tasty-pizza-near-ingredients.jpg')]">
+    <div class="bg-cover bg-no-repeat bg-center mx-auto lg:w-[98%] h-full lg:h-[100vh] rounded-lg bg-[url('assets/tasty-pizza-near-ingredients.jpg')]">
 
         <h1 class="text-5xl font-bold text-[#1DD100] pt-32 text-center "><span className="text-white">Discover</span> an exceptional cooking <br/> class tailored for you!</h1>
         <p class="text-[#FFF] text-sm font-normal opacity-70 mt-4 text-center leading-6">Cooking classes and Culinary Education  have evolved into dynamic experiences that not <br/> only teach culinary skills but also drive revenue generation</p>
