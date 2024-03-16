@@ -86,11 +86,6 @@ const Header = () => {
           </div>
         </div>
       </nav>
-
-      {/* banner section 
-    [linear-gradient(45deg,rgba(0,0,0,0.4),rgba(0,0,0,0.2)) */}
-
-      {/* <div class="container mx-auto lg:px-20 pt-3 my-0 lg:my-4"> */}
       <section>
         <div class="bg-cover bg-no-repeat bg-center mx-auto lg:w-[98%] h-full lg:h-[100vh] rounded-lg bg-[url('assets/tasty-pizza-near-ingredients.jpg')]">
           <h1 class="text-5xl font-bold text-[#1DD100] pt-32 text-center ">

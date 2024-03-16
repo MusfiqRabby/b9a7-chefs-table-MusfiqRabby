@@ -8,6 +8,7 @@ const Recipe = ({handleToBtn}) => {
     .then(res => res.json())
     .then(data => setRecipe(data))
    },[])
+
     return (
         <div className="md:w-2/3 grid grid-cols-2 gap-2 mx-w-7xl mx-auto">
             
