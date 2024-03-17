@@ -8,7 +8,6 @@ const Single = ({ single, handleToBtn}) => {
   const { recipe_name, recipe_image, preparing_time, calories, ingredients, short_description } = single;
 
   return (
-    <div>
       <div class="card bg-base-100 shadow-xl">
         <figure>
           <img className=" w-full h-56 p-4 "
@@ -21,11 +20,13 @@ const Single = ({ single, handleToBtn}) => {
             <h5 className="text-lg text-[#282828] font-medium">ingredients:{ingredients.length}<br/>
             </h5>
            <div>
+          
            {
             ingredients.map((ingre, idx) => <div key={idx} >
-            <li item={ingre} className="opacity-80">{ingredients}</li>
-          </div> )
+            <li item={ingre} className="opacity-80">{ingre}</li>
+          </div>)
            }
+           
            </div>
             </div>
 
@@ -48,8 +49,7 @@ const Single = ({ single, handleToBtn}) => {
           </div>
         </div>
       </div>
-    </div>
-
+      
   );
 };
 

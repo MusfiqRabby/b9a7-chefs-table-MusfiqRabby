@@ -14,22 +14,23 @@ const [cooks, setCooks] = useState([]);
       setCooks([...cooks, single]);
     }
     else{
-      toast('already exisit')
+      toast.warning('Already exist')
     }
   }
  
-  const [total, setTotal] = useState(0)
-  const handlePreparing = (time, colurious) =>{
-       console.log('prepare time adding') 
-    }
+ const handleDelete = (id) =>{
+  const newHandle = cooks.filter(item => item.recipe_id != id)
+  setCooks(newHandle);
+ }
 
+ 
   return (
     <>
     <Header></Header>
    <div className='md:flex '>
-   <Recipe handleToBtn={handleToBtn}></Recipe>
+   <Recipe handleToBtn={handleToBtn} ></Recipe>
    <ToastContainer />
-   <Wanto cooks={cooks} handlePreparing={handlePreparing}></Wanto>
+   <Wanto cooks={cooks} handleDelete={handleDelete}></Wanto>
    
    </div>
     </>
@@ -37,24 +38,6 @@ const [cooks, setCooks] = useState([]);
 }
 
 export default App
-
-
- // const newCooks = [...cooks, single];
-  // setCooks(newCooks);
-// const [order, setOrder] = useState([]);
-    // // const [cookses, setCookses] = useState([]);
-    
-    // const handleOder = cook => {
-      // const isExist = order.find(i => i.recipe_id === cook.recipe_id)
-      // if(!isExist){
-      //   setOrder([...order,cook])
-      //   return toast.success('Successfully added')
-      // }
-      // else{
-      //   return toast.warning('Already exist');
-    //   }
-    // }
-
 
   // {
     //   "recipe_id": "5",
