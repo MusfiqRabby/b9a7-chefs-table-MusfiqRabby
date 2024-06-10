@@ -1,2 +1,2 @@
-[Smitten-Kitchen]('https://assignment-ph7.netlify.app/')
+[Smitten-Kitchen](https://assignment-ph7.netlify.app/)
 
